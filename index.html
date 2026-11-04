@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
@@ -10,12 +10,24 @@
   <script src="space-effects.js" defer></script>
   <script src="white-spider.js" defer></script>
   <script src="protect-media.js" defer></script>
+  <style>
+    .brand-series > .brand-lead,
+    .brand-series > .brand-mockups { width: 100%; max-width: none; }
+    .brand-series > .brand-final { width: 72%; }
+    @media (max-width: 760px) { .brand-series > .brand-final { width: 100%; } }
+    #everpeakGallery .square-thumbnail img {
+      aspect-ratio: 1 / 1;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
 </head>
 <body>
   <main class="page-shell">
     <nav class="top-nav" aria-label="Page navigation">
-      <a class="back-link" href="https://shuwenwang110.github.io/Portfolio/" data-transition>Back to portfolio</a>
-      <p class="page-explain">A brand design project developed around Sony, exploring how a visual identity can extend across packaging, posters, public advertising, and environmental mockups.</p>
+      <a class="back-link" href="index.html" data-transition>Back to portfolio</a>
+      <p class="page-explain">Brand identity projects for Sony and EVERPEAK, exploring visual systems through packaging, product presentation, posters, and advertising.</p>
     </nav>
     <section class="project-hero">
       <div>
@@ -24,6 +36,11 @@
       </div>
     </section>
 
+    <section class="series-block brand-series" aria-labelledby="seriesSony">
+      <div class="series-heading">
+        <p class="eyebrow">Series 01</p>
+        <h2 id="seriesSony">Sony Brand Design</h2>
+      </div>
     <section class="brand-lead" aria-label="Brand system design boards">
       <figure class="work-frame">
         <img src="brand-design/Design.png" alt="Brand system design board 1" loading="eager" />
@@ -61,10 +78,94 @@
       </figure>
     </section>
 
-    <a class="bottom-back-link" href="https://shuwenwang110.github.io/Portfolio/" data-transition>Back to portfolio</a>
+    </section>
+
+    <section class="series-block" aria-labelledby="seriesEverpeak">
+      <div class="series-heading">
+        <p class="eyebrow">Series 02</p>
+        <h2 id="seriesEverpeak">EVERPEAK — Eye Care Brand Design</h2>
+      </div>
+      <div class="click-gallery architecture-gallery" id="everpeakGallery">
+        <button class="click-card gallery-wide" type="button" data-full="brand-design/everpeak/everpeak-packaging.jpg" aria-label="Open EVERPEAK packaging campaign">
+          <img src="brand-design/everpeak/everpeak-packaging.jpg" alt="EVERPEAK packaging campaign" loading="lazy" />
+          <span>01</span>
+        </button>
+        <button class="click-card" type="button" data-full="brand-design/everpeak/everpeak-applicator-poster.jpg" aria-label="Open EVERPEAK applicator campaign">
+          <img src="brand-design/everpeak/everpeak-applicator-poster.jpg" alt="EVERPEAK applicator campaign" loading="lazy" />
+          <span>02</span>
+        </button>
+        <button class="click-card" type="button" data-full="brand-design/everpeak/everpeak-set-poster.jpg" aria-label="Open EVERPEAK eye care set campaign">
+          <img src="brand-design/everpeak/everpeak-set-poster.jpg" alt="EVERPEAK eye care set campaign" loading="lazy" />
+          <span>03</span>
+        </button>
+
+        <button class="click-card gallery-wide" type="button" data-full="brand-design/everpeak/everpeak-billboard.jpg" aria-label="Open EVERPEAK billboard artwork">
+          <img src="brand-design/everpeak/everpeak-billboard.jpg" alt="EVERPEAK billboard artwork" loading="lazy" />
+          <span>05</span>
+        </button>
+        <button class="click-card square-thumbnail" type="button" data-full="brand-design/everpeak/everpeak-applicator-box.jpg" aria-label="Open EVERPEAK applicator packaging">
+          <img src="brand-design/everpeak/everpeak-applicator-box.jpg" alt="EVERPEAK applicator packaging" loading="lazy" />
+          <span>06</span>
+        </button>
+        <button class="click-card square-thumbnail" type="button" data-full="brand-design/everpeak/everpeak-refill-box.jpg" aria-label="Open EVERPEAK refill packaging">
+          <img src="brand-design/everpeak/everpeak-refill-box.jpg" alt="EVERPEAK refill packaging" loading="lazy" />
+          <span>07</span>
+        </button>
+        <button class="click-card square-thumbnail" type="button" data-full="brand-design/everpeak/everpeak-refill-open.jpg" aria-label="Open EVERPEAK refill packaging open">
+          <img src="brand-design/everpeak/everpeak-refill-open.jpg" alt="EVERPEAK refill packaging open" loading="lazy" />
+          <span>08</span>
+        </button>
+        <button class="click-card square-thumbnail" type="button" data-full="brand-design/everpeak/everpeak-vials.jpg" aria-label="Open EVERPEAK 5 ml eye drop bottles">
+          <img src="brand-design/everpeak/everpeak-vials.jpg" alt="EVERPEAK 5 ml eye drop bottles" loading="lazy" />
+          <span>09</span>
+        </button>
+        <button class="click-card gallery-wide" type="button" data-full="brand-design/everpeak/everpeak-billboard-mockup.jpg" aria-label="Open EVERPEAK outdoor billboard mockup">
+          <img src="brand-design/everpeak/everpeak-billboard-mockup.jpg" alt="EVERPEAK outdoor billboard mockup" loading="lazy" />
+          <span>10</span>
+        </button>
+        <button class="click-card gallery-wide" type="button" data-full="brand-design/everpeak/everpeak-subway-mockup.jpg" aria-label="Open EVERPEAK subway advertising mockup">
+          <img src="brand-design/everpeak/everpeak-subway-mockup.jpg" alt="EVERPEAK subway advertising mockup" loading="lazy" />
+          <span>11</span>
+        </button>
+        <button class="click-card gallery-wide" type="button" data-full="brand-design/everpeak/everpeak-citylight-mockup.jpg" aria-label="Open EVERPEAK citylight advertising mockup">
+          <img src="brand-design/everpeak/everpeak-citylight-mockup.jpg" alt="EVERPEAK citylight advertising mockup" loading="lazy" />
+          <span>12</span>
+        </button>
+      </div>
+    </section>
+
+    <a class="bottom-back-link" href="index.html" data-transition>Back to portfolio</a>
   </main>
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1">
+    <img class="lightbox-image" src="" alt="" />
+  </div>
   <div class="fade-screen" aria-hidden="true"></div>
   <script>
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = document.querySelector('.lightbox-image');
+    let lastCard;
+    document.querySelectorAll('#everpeakGallery .click-card').forEach(card => {
+      card.addEventListener('click', () => {
+        lastCard = card;
+        lightboxImage.src = card.dataset.full;
+        lightboxImage.alt = card.querySelector('img').alt;
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('lightbox-open');
+        lightbox.focus();
+      });
+    });
+    function closeLightbox() {
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('lightbox-open');
+      if (lastCard) lastCard.focus();
+    }
+    lightbox.addEventListener('click', event => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', event => {
+      if (lightbox.getAttribute('aria-hidden') === 'true') return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'Tab') { event.preventDefault(); lightbox.focus(); }
+    });
+
     document.querySelectorAll("[data-transition]").forEach(link => {
       link.addEventListener("click", event => {
         event.preventDefault();
